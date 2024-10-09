@@ -13,6 +13,10 @@ h2 {
   text-decoration: underline;
 }
 
+h3 {
+  text-align: center;
+}
+
 .about {
 
 }
@@ -34,7 +38,7 @@ h2 {
   border-radius: 25%
 }
 
-.project img {
+.project img{
   width: 300px;
   height: 300px;
   margin: 10px;
