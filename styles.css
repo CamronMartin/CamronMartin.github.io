@@ -1,25 +1,39 @@
+/* Gruvbox-inspired theme colors */
+:root {
+  --background-color: #1d2021; /* Dark background */
+  --text-color: #ebdbb2;       /* Light text */
+  --highlight-color: #d3869b;  /* Pink/purple accent for headers */
+  --border-color: #fbf1c7;     /* Yellow for borders */
+  --box-background: #3c3836;   /* Box background for elements like .project */
+  --link-color: #8ec07c;       /* Aqua for links */
+  --link-hover-color: #83a598; /* Softer aqua for hover effect */
+}
 
 body {
-  background: #FFFFC5;
+  background: var(--background-color);
+  color: var(--text-color);
   font-family: 'Times New Roman', Times, serif;
   margin: 40px;
 }
 
 h1 {
   text-align: center;
+  color: var(--highlight-color);
 }
 
 h2 {
   text-decoration: underline;
+  color: var(--highlight-color);
 }
 
 h3 {
   text-align: center;
+  color: var(--highlight-color);
 }
 
 .about {
-  display:flex;
-  flex-wrap:wrap;
+  display: flex;
+  flex-wrap: wrap;
   margin-right: 100px;
   margin-left: 100px;
   justify-content: center;
@@ -29,22 +43,21 @@ h3 {
   width: 150px;
   height: 200px;
   border-radius: 25%;
-  border: 2px solid rgb(126, 14, 201);
+  border: 2px solid var(--border-color);
 }
 
 .about p {
-  width:50%;
+  font-size: 20px;
+  width: 50%;
   text-align: center;
   margin: auto;
   line-height: 125%;
-}  
+}
 
-.skills {
+.skills {}
 
-} 
-
-.projects { 
-  display: flex; 
+.projects {
+  display: flex;
   flex-wrap: wrap;
 }
 
@@ -52,29 +65,38 @@ h3 {
   width: 28%;
   margin: 10px;
   padding: 20px 10px;
-  background: lightcyan;
-  border-radius: 25%
+  background: var(--box-background);
+  border-radius: 15%;
+  border: 1px solid var(--border-color);
 }
 
-.project img{
+.project img {
   width: 300px;
-  height: 300px;
   max-width: 90%;
+  height: 300px;
+  max-height: 300px;
   margin: 10px auto;
-  border: 2px solid rgb(126, 14, 201); /* choose a color */
+  border: 2px solid var(--border-color);
   display: block;
   margin: auto;
 }
 
-a { /* change the appearance of ALL links */
-text-decoration: none;
-color: purple;
+a {
+  text-decoration: none;
+  color: var(--link-color);
+  transition: color 0.3s;
 }
-.project p { /* change the appearance of paragraph tags inside .project divs */
-text-align: center;
-margin: 15px;
+
+a:hover {
+  color: var(--link-hover-color);
+}
+
+.project p {
+  text-align: center;
+  margin: 15px;
+  color: var(--text-color);
 }
 
 .contact {
-
+  color: var(--text-color);
 }
