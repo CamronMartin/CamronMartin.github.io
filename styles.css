@@ -59,7 +59,7 @@ h3 {
 .project img{
   width: 300px;
   height: 300px;
-  max-width: 98%;
+  max-width: 90%;
   margin: 10px auto;
   border: 2px solid rgb(126, 14, 201); /* choose a color */
   display: block;
