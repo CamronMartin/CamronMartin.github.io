@@ -54,7 +54,9 @@ h3 {
   line-height: 125%;
 }
 
-.skills {}
+.skills {
+  font-size: 20px;
+}
 
 .projects {
   display: flex;
