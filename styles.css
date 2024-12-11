@@ -63,10 +63,10 @@ h3 {
 }
 
 .projects {
-  font-size: 20px;
-  display: flex;
-  flex-wrap: wrap; /* Allow items to wrap to the next row */
-  justify-content: space-around; /* Space the items evenly */
+    font-size: 20px;
+    display: flex;
+    flex-direction: column; /* Stack projects vertically */
+    align-items: center;    /* Center-align the projects horizontally */
 }
 
 .project {
