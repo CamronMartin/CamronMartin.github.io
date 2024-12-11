@@ -3,29 +3,62 @@
 <head>
 <title>CSCE 190: Camron Martin</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="images/star.png">
 </head>
 <body>
-    <h1>Camron Martin</h1>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const projects = document.querySelectorAll(".project");
+
+      // Function to check if an element is in the viewport
+      function isInViewport(element) {
+        const rect = element.getBoundingClientRect();
+        return (
+          rect.top >= 0 &&
+          rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+        );
+      }
+
+      // Function to add the 'visible' class to elements in the viewport
+      function onScroll() {
+        projects.forEach((project) => {
+          if (isInViewport(project)) {
+            project.classList.add("visible");
+          }
+        });
+      }
+
+      // Attach scroll event
+      window.addEventListener("scroll", onScroll);
+
+      // Trigger the function on page load
+      onScroll();
+    });
+
+  </script>
+    <!-- <h1>Camron Martin</h1> -->
     <h2> About Me </h2>
     <div class="about">
       <img src="images/profile_image.jpg">
       <p>
-      Welcome! My name is Camron Martin and I am currently a student studying Computer Science 
+      Welcome! My name is <span style="color: #d65d0e; font-weight: bold;">Camron Martin</span> and I am currently a student studying Computer Science 
       at the University of South Carolina. I am passionate about developing and creating software. My mission 
       is to learn and develop Artificial Intelligence to help everyone.
       </p>
     </div>
     <h2>Skills</h2>
     <div class="skills">
+      <p>I am proficient with Java, C++, Git.</p>
       <p><b>Resume: </b><a href="files/Camron Martin Resume.pdf" target="_blank">Download here.</a></p>
     </div>
       
       <!-- Highlighted Projects Section -->
       <h2>Highlighted Projects</h2>
+
     <div class="projects">
 
       <!-- Problem Statement Section -->
-      <section class="project">
+      <section class="project problem-statement">
         <a href="files/statement.pdf" target="_blank"><h3>Problem Statement</h3></a>
         <a href="files/statement.pdf" target="_blank"><img src="images/problem-statement.jpeg"></a>
         <p>Maintaing focus during the digital age of content has been an ongoing problem.</p>
@@ -59,12 +92,19 @@
           <p> This is a language learning application designed and developed by my team in our CSCE 247 class. It provides functionality for signing up users, logging in users if their account exists, tracking their course progression, and many more features.</p>
 
        </section>
+
+       <!-- Design Patterns -->
+        <section class="project">
+          <a href="https://github.com/CamronMartin/design_patterns" target="_blank"><h3>Design Pattterns</h3></a>
+          <a href="https://github.com/CamronMartin/design_patterns" target="_blank"><img src="images/designpatterns.png"></a>
+          <p> This is a github repository that implements popular design patterns commonly used in projects and applications.</p>
+        </section>
       
     </div>
     
 
     <!-- Contact Me Section -->
     <div class="contact"><h2>Contact Me</h2></div>
-      <p> camronm@email.sc.edu</p>
+      <p style="font-size: 30px;"> camronm@email.sc.edu</p>
 </body>
 </html>
