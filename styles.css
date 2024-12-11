@@ -111,6 +111,7 @@ h3 {
   border: 2px solid var(--border-color);
   display: block;
   margin: auto;
+  background-color: white;
 }
 
 
