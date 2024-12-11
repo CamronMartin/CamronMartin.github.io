@@ -59,6 +59,7 @@ h3 {
 
 
 .skills {
+  text-align: center;
   font-size: 20px;
 }
 
@@ -132,5 +133,6 @@ a:hover {
 }
 
 .contact {
+  text-align: center;
   color: var(--text-color);
 }
