@@ -65,19 +65,17 @@ h3 {
 .projects {
     font-size: 20px;
     display: flex;
-    flex-direction: column; /* Stack projects vertically */
-    align-items: center;    /* Center-align the projects horizontally */
+    flex-direction: column; 
+    align-items: center;    
 }
 
 .project {
-  width: 45%; /* Reduce the width to allow only two items per row */
-  margin: 10px; /* Maintain spacing between projects */
+  width: 45%; 
+  margin: 10px; 
   padding: 20px 10px;
   background: var(--box-background);
   border-radius: 0%;
   border: 1px solid var(--border-color);
-
-  /* Initial hidden state for scroll animation */
   opacity: 0;
   transform: translateY(50px);
   transition: opacity 0.6s ease, transform 0.6s ease;
@@ -102,7 +100,7 @@ h3 {
 }
 
 .problem-statement img {
-  object-fit: contain; /* Ensure the image fits nicely */
+  object-fit: contain; 
   width: 300px;
   max-width: 90%;
   height: 300px;
