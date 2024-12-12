@@ -37,10 +37,11 @@ h3 {
 .about {
   display: flex;
   flex-wrap: nowrap; 
-  margin-left: 150px; 
-  justify-content: left; 
-  align-items: center; 
-  gap: 50px; 
+  justify-content: center; 
+  align-items: center;
+  margin: 0 auto; 
+  gap: 50px;
+  padding: 20px; 
 }
 
 .about img {
@@ -51,11 +52,12 @@ h3 {
 
 .about p {
   font-size: 20px;
-  width: 50%;
-  text-align: center; 
-  line-height: 1.25; 
-  margin: 0; 
+  width: 50%; 
+  text-align: center;
+  line-height: 1.25;
+  margin: 0;
 }
+
 
 
 .skills {
